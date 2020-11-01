@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADACHI</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container header__inner">
+      <a href="./" class="logo">
+        <img src="./images/logo.png" alt="Adachi Co.,LTD">
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu--list">
+          <li class="header__menu--item">
+            <a class="header__menu--link" href="#">Điểm bán</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--link" href="#">Sản phẩm</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--link" href="#">Cẩm nang</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--link" href="#">Hỏi đáp</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--link" href="#">Sự kiện</a>
+          </li>
+          <li class="header__menu--item">
+            <a class="header__menu--link" href="#">Báo chí nói về chúng tôi</a>
+          </li>
+        </ul>
+      </nav>
+      <span class="header__search">
+        <img src="./images/search.png" alt="Tìm kiếm">
+        <input type="text" class="header__search--active" placeholder="Tìm kiếm...">
+      </span>
+      <div id="res-icon" class="header__toggle">
+        <div class="header__toggle--icon"></div>
+        <div class="header__toggle--icon"></div>
+        <div class="header__toggle--icon"></div>
+      </div>      
+    </div>
+    <nav id="res-menu" class="res__menu">
+      <ul class="res__menu--list">
+        <li class="res__menu--item">
+          <a class="res__menu--link" href="#">Điểm bán</a>
+        </li>
+        <li class="res__menu--item">
+          <a class="res__menu--link" href="#">Sản phẩm</a>
+        </li>
+        <li class="res__menu--item">
+          <a class="res__menu--link" href="#">Cẩm nang</a>
+        </li>
+        <li class="res__menu--item">
+          <a class="res__menu--link" href="#">Hỏi đáp</a>
+        </li>
+        <li class="res__menu--item">
+          <a class="res__menu--link" href="#">Sự kiện</a>
+        </li>
+        <li class="res__menu--item">
+          <a class="res__menu--link" href="#">Báo chí nói về chúng tôi</a>
+        </li>
+      </ul>
+      <input type="text" class="res__search" placeholder="Tìm kiếm...">
+    </nav>
+  </div>
+  <section class="banner">
+    <div class="container banner__slide-show">
+      <div class="mySlides fade">        
+        <img src="./images/slideshow.png" alt="">
+      </div>
+      <div class="mySlides fade">        
+        <img src="./images/slideshow.png" alt="">
+      </div>
+      <div class="mySlides fade">        
+        <img src="./images/slideshow.png" alt="">
+      </div>
+      <div class="mySlides fade">        
+        <img src="./images/slideshow.png" alt="">
+      </div>
+      <div class="mySlides fade">        
+        <img src="./images/slideshow.png" alt="">
+      </div>     
+      <div class="banner__slide-show--dot" >
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+      </div>
+    </div>
+  </section>
+  <section class="product1">
+    <div class="container product">
+      <div class="col-6 col-12 product__item">
+        <div class="product__logo">
+          <img src="./images/sologan.png" alt="">
+        </div>
+        <div class="product__desc">          
+          <img class="product__desc--img" src="./images/checkbox.png" alt="">
+          <p class="product__desc--detail">Bổ sung các dưỡng chất cần thiết, có ích cho thị giác</p>
+        </div>
+        <div class="product__desc">          
+          <img class="product__desc--img" src="./images/checkbox.png" alt="">
+          <p class="product__desc--detail">Giúp tăng cường thị lực cho mắt</p>
+        </div>
+        <div class="product__desc">          
+          <img class="product__desc--img" src="./images/checkbox.png" alt="">
+          <p class="product__desc--detail">Hỗ trợ phòng ngừa cận thị, mỏi mắt, khô mắt</p>
+        </div>
+        <div class="product__btn">
+          <div class="product__btn--genaral product__btn--buy">
+            <a class="product__btn--link" href="#">
+              <img src="./images/cart.png" alt="" class="product__btn--icon">
+              Đặt mua trực tuyến
+            </a>
+          </div>
+          <div class="product__btn--genaral product__btn--search">
+            <a class="product__btn--link" href="#">
+              <img src="./images/Search2.png" alt="" class="product__btn--icon">
+              Tra cứu điểm bán
+            </a>
+          </div>
+          
+        </div>       
+      </div>
+      <div class="col-6 col-12 product__item">
+        <img class="product__item--special-kid" src="./images/special.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="product2">
+    <div class="container product">
+      <div class="col-6 col-12 product__item">
+        <div class="product__logo">
+          <img src="./images/sologan.png" alt="">
+        </div>
+        <div class="product__desc">          
+          <img class="product__desc--img" src="./images/checkboxgreen.png" alt="">
+          <p class="product__desc--detail">Bổ sung các dưỡng chất cần thiết, có ích cho thị giác</p>
+        </div>
+        <div class="product__desc">          
+          <img class="product__desc--img" src="./images/checkboxgreen.png" alt="">
+          <p class="product__desc--detail">Giúp tăng cường thị lực cho mắt</p>
+        </div>
+        <div class="product__desc">          
+          <img class="product__desc--img" src="./images/checkboxgreen.png" alt="">
+          <p class="product__desc--detail">Hỗ trợ phòng ngừa cận thị, mỏi mắt, khô mắt</p>
+        </div>
+        <div class="product__btn">
+          <div class="product__btn--genaral product__btn--buy">
+            <a class="product__btn--link" href="#">
+              <img src="./images/cart.png" alt="" class="product__btn--icon">
+              Đặt mua trực tuyến
+            </a>
+          </div>
+          <div class="product__btn--genaral product__btn--search">
+            <a class="product__btn--link" href="#">
+              <img src="./images/Search2.png" alt="" class="product__btn--icon">
+              Tra cứu điểm bán
+            </a>
+          </div>
+          
+        </div>       
+      </div>
+      <div class="col-6 col-12 product__item">
+        <img class="product__item--special-kid" src="./images/vitaprolis.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="comment">
+    <div class="container">
+      <h2 class="comment__title">
+        Trải nghiệm của người dùng
+      </h2>
+    <div class="comment__wrapper">
+      <div class="comment__desc">
+        <div class="comment__detail">
+          Bé nhà minh xem tivi nhiều nên thị lực kém, từ ngày được mách dùng Vision Special Kid, mình thấy mắt bé có vẻ cải thiện hơn, không còn nheo và dụi mắt nhiều như trước nữa, mình sẽ tiếp tục cho bé dùng thêm xem sao.
+        </div>
+        <a href="#" class="comment__info">
+          <span class="comment__info--avt">
+            <img src="./images/avt1.png" alt="">
+          </span>
+          <div class="comment__info--contact">
+            <span class="comment__info--name">
+              Nguyễn Vân Anh
+            </span>
+            <span class="comment__info--address">
+              Hà Nội
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="comment__desc">
+        <div class="comment__detail">
+          Bé nhà minh xem tivi nhiều nên thị lực kém, từ ngày được mách dùng Vision Special Kid, mình thấy mắt bé có vẻ cải thiện hơn, không còn nheo và dụi mắt nhiều như trước nữa, mình sẽ tiếp tục cho bé dùng thêm xem sao.
+        </div>
+        <a href="#" class="comment__info">
+          <span class="comment__info--avt">
+            <img src="./images/avt2.png" alt="">
+          </span>
+          <div class="comment__info--contact">
+            <span class="comment__info--name">
+              Nguyễn Vân Anh
+            </span>
+            <span class="comment__info--address">
+              Hà Nội
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="comment__desc">
+        <div class="comment__detail">
+          Bé nhà minh xem tivi nhiều nên thị lực kém, từ ngày được mách dùng Vision Special Kid, mình thấy mắt bé có vẻ cải thiện hơn, không còn nheo và dụi mắt nhiều như trước nữa, mình sẽ tiếp tục cho bé dùng thêm xem sao.
+        </div>
+        <a href="#" class="comment__info">
+          <span class="comment__info--avt">
+            <img src="./images/avt3.png" alt="">
+          </span>
+          <div class="comment__info--contact">
+            <span class="comment__info--name">
+              Nguyễn Vân Anh
+            </span>
+            <span class="comment__info--address">
+              Hà Nội
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="health">
+    <div class="container health__container">
+      <div class="health__book">
+        <h2 class="health__book--title">
+          Cẩm nang sức khoẻ
+        </h2>        
+        <a href="#" class="health__book-posts">
+          <div class="health__book-posts--img">
+            <img src="./images/health1.png" alt="">
+          </div>
+          <div class="health__book-posts--desc">
+            <h3 class="health__book-posts--title">
+              Các bệnh về mắt thường gặp và giải pháp điều trị
+            </h3>
+            <p class="health__book-posts--time">
+              <img src="./images/clock.png" alt="">
+              17/07/2017
+            </p>
+            <p class="health__book-posts--detail">
+              Mắt người là một phần của não hình thành từ tuần thứ 3 của phôi kỳ dưới dạng hai túi thị nguyên thủy, phát triển và lồi dần ra phía trước tạo thành võng mạc, thủy tinh thể và các thành phần hoàn chỉnh khác. 
+            </p>
+          </div>
+        </a>
+        <a href="#" class="health__book-posts">
+          <div class="health__book-posts--img">
+            <img src="./images/health2.png" alt="">
+          </div>
+          <div class="health__book-posts--desc">
+            <h3 class="health__book-posts--title">
+              Các bệnh về mắt thường gặp và giải pháp điều trị
+            </h3>
+            <p class="health__book-posts--time">
+              <img src="./images/clock.png" alt="">
+              17/07/2017
+            </p>
+            <p class="health__book-posts--detail">
+              Mắt người là một phần của não hình thành từ tuần thứ 3 của phôi kỳ dưới dạng hai túi thị nguyên thủy, phát triển và lồi dần ra phía trước tạo thành võng mạc, thủy tinh thể và các thành phần hoàn chỉnh khác. 
+            </p>
+          </div>
+        </a>
+        <a href="#" class="health__book-posts">
+          <div class="health__book-posts--img">
+            <img src="./images/health3.png" alt="">
+          </div>
+          <div class="health__book-posts--desc">
+            <h3 class="health__book-posts--title">
+              Người cận thị không muốn tăng độ thì nên sử dụng ngay 3 loại thực phẩm này
+            </h3>
+            <p class="health__book-posts--time">
+              <img src="./images/clock.png" alt="">
+              17/07/2017
+            </p>
+            <p class="health__book-posts--detail">
+              Đôi mắt được ví như cửa sổ tâm hồn, nhờ có đôi mắt, chúng ta mới nhận biết, khám phá, chiêm ngưỡng thế giới xung quanh.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="health__event">
+        <h2 class="health__event--title">
+          Sự kiện
+        </h2>    
+        <a href="#" class="health__event-posts">
+          <div class="health__event-posts--img">
+            <img src="./images/health-event.png" alt="">
+          </div>
+          <div class="health__event-posts--info">
+           <div class="health__event-posts--time">
+             <span>01</span>
+             <span>THG 11</span>
+           </div>
+           <div class="health__event-posts--desc">
+            <h3 class="health__event-posts--title">
+              Các bệnh về mắt thường gặp và giải pháp điều trị
+            </h3>
+            <p class="health__event-posts--detail">
+              Mắt người là một phần của não hình thành từ tuần thứ 3 của phôi kỳ dưới dạng hai túi thị nguyên thủy, phát triển và lồi dần ra phía trước tạo thành võng mạc, thủy tinh thể và các thành phần hoàn chỉnh khác.
+            </p>
+           </div>
+          </div>
+        </a> 
+      </div>
+    </div>
+  </section>
+  <section class="symptom">
+    <div class="container symptom__container">
+      <div class="col-6 col-12">
+        <h1 class="symptom__title">
+          Trẻ đang gặp phải các triệu chứng nào?
+        </h1>
+        <div class="symptom__desc">          
+          <img class="symptom__desc--img" src="./images/checkboxred.png" alt="">
+          <p class="symptom__desc--detail">Trẻ bị cận thị</p>
+        </div>
+        <div class="symptom__desc">          
+          <img class="symptom__desc--img" src="./images/checkboxred.png" alt="">
+          <p class="symptom__desc--detail">Trẻ có thị lực kém</p>
+        </div>
+        <div class="symptom__desc">          
+          <img class="symptom__desc--img" src="./images/checkboxred.png" alt="">
+          <p class="symptom__desc--detail">Trẻ bị mỏi mắt, khô mắt do thiếu dưỡng chất</p>
+        </div>
+        <h3 class="symptom__advisoryy">
+          Hãy chia sẻ với chúng tôi để được chuyên gia tư vấn
+        </h3>
+        <div class="symptom__btn">
+            <a class="symptom__btn--link" href="#">              
+              Đặt câu hỏi
+            </a>             
+        </div>  
+      </div>
+      <div class="col-6 col-12">
+        <img src="./images/doctor.png" alt="">
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__container d-flex">
+      <div class="col-6 col-12 footer__contact">
+        <h2 class="footer__title">
+          Công ty tnhh Tư vấn đầu tư quản lý thương mại và dịch vụ ADACHI
+        </h2>
+        <div class="footer__info">
+          <p>Địa chỉ: Số 75, ngõ 80, phố Ngụy Như Kon Tum, Phường Nhân Chính, 
+          Quận Thanh Xuân, TP. Hà Nội
+          </p>
+          <p>Chăm sóc KH: 024 66598939</p>
+          <p>Hotline: 0901849396/0977703938</p>
+          <p>Email: honghue2512@gmail.com</p>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="footer__social--icon">
+            <img src="./images/fb2.png" alt="">
+          </a>
+          <a href="#" class="footer__social--icon">
+            <img src="./images/twitter.png" alt="">
+          </a>
+          <a href="#" class="footer__social--icon">
+            <img src="./images/googleplus.png" alt="">
+          </a>
+          <a href="#" class="footer__social--icon">
+            <img src="./images/youtube.png" alt="">
+          </a>       
+        </div>
+      </div>
+      <div class="col-6 col-12 d-flex">
+        <div class="col-6 col-12 footer__category">
+          <h2 class="footer__title">Danh mục</h2>
+          <ul class="footer__category--list">
+            <li class="footer__category--item">
+              <a href="#" class="footer__category--link">Sản phẩm</a>
+            </li>
+            <li class="footer__category--item">
+              <a href="#" class="footer__category--link">Điểm bán</a>
+            </li>
+            <li class="footer__category--item">
+              <a href="#" class="footer__category--link">Cẩm nang</a>
+            </li>
+            <li class="footer__category--item">
+              <a href="#" class="footer__category--link">Hỏi đáp</a>
+            </li>
+            <li class="footer__category--item">
+              <a href="#" class="footer__category--link">Sự kiện</a>
+            </li>
+            <li class="footer__category--item">
+              <a href="#" class="footer__category--link">Báo chí nói về chúng tôi</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-12 footer__fanpage">
+          <h2 class="footer__title">Facebook</h2>
+          <a href="#" class="footer__fanpage--link">
+            <img src="./images/fanpage.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="container">
+        <p class="footer__copyright--content">Copyright ©  ADACHI., JSC. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <section class="contact">
+    <a href="#" class="contact__link">
+      <img src="./images/phone.png" alt="" class="contact__icon">
+    </a>
+    <a href="#" class="contact__link">
+      <img src="./images/fb.png" alt="" class="contact__icon">
+    </a>
+    <a href="#" class="contact__link">
+      <img src="./images/zalo.png" alt="" class="contact__icon">
+    </a>
+    <a href="#" class="contact__link">
+      <img src="./images/gim.png" alt="" class="contact__icon">
+    </a>
+    <a href="#" class="contact__link">
+      <img src="./images/cart.png" alt="" class="contact__icon">
+    </a>
+  </section>
+  <section class="support">
+    <div class="support__inner">
+      <img src="./images/support.png" alt="" class="support__icon">
+      <span class="support__title">Tư vấn hỗ trợ</span>
+      <img src="./images/arrowup.png" alt="" class="support__icon">
+    </div>
+  </section>
+
+</body>
+
+</html>
+
+<script src="./script/slideshow.js"></script>
+<script src="./script/res-menu.js"></script>
